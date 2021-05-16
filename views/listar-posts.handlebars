@@ -1,0 +1,12 @@
+<h1>Listagem dos Posts</h1>
+
+{{#each posts}}
+    ID: {{id}}<br>
+    Título: {{titulo}}<br>
+    Conteúdo: {{conteudo}}<br>
+    Cadastrado: {{#formatDate createdAt}}{{/formatDate}}<br>
+    <a class="btn-submit" href="/apagar-post/{{id}}"><button type="submit"> Apagar </button></a>
+    <a class="btn-submit" href="/editar-post/{{id}}"><button type="submit"> Editar </button></a>
+    <br>
+    <hr>
+{{/each}}

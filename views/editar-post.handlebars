@@ -1,0 +1,11 @@
+<h1>Edite seu Post</h1>
+
+<form action="/alterar-post" method="POST">
+     <label for="">{{post.id}}</label>  
+    <label for="">Título</label><br>
+    <input type="text" name="titlepost" value="{{post.titulo}}"><br>
+    <label for="">Conteúdo</label><br>
+    <textarea name="contentpost" id="" cols="30" rows="8">{{post.conteudo}}</textarea><br>
+    <input type="hidden" value="{{post.id}}" name="id">
+    <button type="submit">Alterar</button>
+</form>
